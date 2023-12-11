@@ -1,0 +1,27 @@
+.square {
+width: 80px;
+height:80px;
+margin: 30px auto;
+background-color: #88C34A;
+animation-name: spin;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-delay: 1s;
+animation-iteration-count: infinite;
+reverse; alternate
+animation-direction: alternate;
+}
+.square:hover{
+animation-play-state: paused; 
+}
+@keyframes spin {
+ 0%{ 
+transform:rotate(0deg); 
+}
+25%,70%{
+background-color: #FFEB3B;
+}
+100%{
+transform:rotate(360deg);
+   }
+}
